@@ -14,22 +14,14 @@
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
-        
-            document.addEventListener("deviceready",function() { 
-  			    $("#element1").text("start deviceready");
-  			    
-			    $("#element1").text("end deviceready");
-  		    }, false); // doc event listener
-        
             app.initialize();
         </script>
-        
-        <div class="app" id="home">
-    		<div id="app-status-div">
-        		<ul id="app-status-ul">
-            			<li id="element1">WebviewPushPG Demo</li>
-        		</ul>
-    		</div>
-	    </div>
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
     </body>
 </html>
